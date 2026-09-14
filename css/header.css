@@ -1,0 +1,33 @@
+/*외부 CSS문서를 불러옴*/
+@import url("reset.css");
+
+header{
+  width:100%;
+  min-width:1300px;
+  background-color:#fff;
+  /*요소에 그림자를 적용하는 속성 : x축이동값, y축 이동값, 흐림도, 확장값(예제에는 생략), 색상*/
+  box-shadow:0 2px 3px rgba(0,0,0,0.15);
+  /*text-shadow : 글자에 그림자 적용*/
+}
+header > .container{
+  padding:0 100px;
+  height:80px;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*이미지요소의 하단 여백을 제거하기 위해 적용*/
+header .logo img{display:block;}
+
+header .gnb{
+  display:flex;
+  gap:32px;
+}
+header .gnb a{
+  color:#191919;
+  font-size:15px;
+}
+header .gnb li.on a{
+  color:#10c9c3;
+}

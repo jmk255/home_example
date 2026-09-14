@@ -1,0 +1,27 @@
+*{margin:0; padding:0; box-sizing:border-box;}
+ul, li{list-style:none;}
+a{
+  text-decoration: none;
+  user-select: none;/*사용자가 글자를 선택할수 없음*/
+}
+table{
+  /*셀과 셀사이의 여백제거*/
+  border-collapse:collapse;
+}
+
+::placeholder{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:15px;
+  font-weight: 400;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  color:#333;
+}
+
+/*commons*/
+.container{
+  width:1300px;
+  margin:auto;
+}
